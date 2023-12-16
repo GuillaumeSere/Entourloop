@@ -59,8 +59,8 @@ span{
 
 .qr-code{
     position: absolute;
-    left:1rem;
-    top:-5.3rem;
+    left:2rem;
+    top:-5.5rem;
 }
 .code{
     width: 80px;
