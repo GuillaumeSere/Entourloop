@@ -109,6 +109,10 @@ span{
     border-radius: 50%;
 }
 
+.icon:hover{
+    transform: scale(1.5);
+}
+
 audio {
     margin-left: 3rem;
 }
