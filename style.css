@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/1200x630cw.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.header{
+    height: 100px;
+    opacity: 0.8;
+    background: black;
+    box-shadow: 3px 10px 15px -1px #959797 ;
+}
+h1{
+    color: rgb(252 181 0);
+    padding-top: 0.5rem;
+    font-family: "Nosifer", sans-serif;
+    animation: myAnim 15s ease-out infinite;
+}
+span{
+    position: absolute;
+    top:-2rem;
+    left: 6rem;
+    font-size: 16px;
+    font-family: "Nosifer", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(252 181 0);
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    text-shadow: black 2px 4px 6px;
+    z-index: 10000;
+}
+.casque{
+    margin-bottom: -1rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    animation: myAnim 2.5s ease-out infinite;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.container {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    position: absolute;
+    z-index: 1000;
+    width: 100px;
+    top: -4rem;
+    right: 1rem;
+    left: -1rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+audio {
+    margin-left: 3rem;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: #959797;
+    padding: 0.5rem;
+    border: solid 1px black;
+}
+
+.radio {
+    float: left;
+    position: relative;
+    margin: 40px;
+    width: 400px;
+    margin-top: 6rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.5rem;
+    box-shadow: 3px 10px 15px -1px #959797 ;
+}
+.playing {
+    background:black;
+    border-bottom: 2px solid transparent;
+}
+.footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    opacity: 0.8;
+    background: black;
+}
+.link{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    height: 40px;
+    margin: 1rem;
+}
+ img.link:hover {
+    transform: scale(1.2);
+  }
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    color: white;
+    letter-spacing: 2px;
+}
+
+@media (max-width:980px){
+
+    .code{
+        margin-top: -1rem;
+        width: 70px;
+    }
+}
+@media (max-width:913px){
+    body {
+        background-size: auto;
+        background-position: top 100px;
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 28px;
+    }
+ 
+}
+@media (max-width:486px){
+    span{
+        position: absolute;
+        top:-2rem;
+        left: 6rem;
+        font-size: 12px;
+        font-family: "Nosifer", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color:rgb(252 181 0);
+    }
+}
+@media (max-width:420px){
+    body {
+        background-size: auto;
+        background-position: top 115px;
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 22px;
+    }
+    span{
+        position: absolute;
+        top:5rem;
+        left: 3rem;
+    }
+    audio{
+        margin-left:0;
+    }
+    .radio{
+        border: none;
+        margin-right:1rem;
+     }
+     .icon{
+        width: 103px;
+        top:-4.8rem;
+        margin: 0 auto;
+    }
+
+
+}
