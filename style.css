@@ -137,9 +137,9 @@ audio::-webkit-media-controls-enclosure {
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     bottom: 0;
-    height: 100px;
+    height: 60px;
     width: 100%;
     opacity: 0.8;
     background: black;
