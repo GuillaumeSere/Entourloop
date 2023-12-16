@@ -149,11 +149,11 @@ audio::-webkit-media-controls-enclosure {
     border-bottom: 2px solid transparent;
 }
 .footer{
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     bottom: 0;
+    margin-top: 15rem;
     height: 60px;
     width: 100%;
     opacity: 0.8;
@@ -189,6 +189,13 @@ p{
         width: 80px;
         height: 80px;
     }
+}
+
+@media (max-height:640px){
+    .footer{
+        position: relative;
+    }
+
 }
 
 @media (max-width:913px){
