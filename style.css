@@ -57,6 +57,16 @@ span{
     animation: myAnim 2.5s ease-out infinite;
 }
 
+.qr-code{
+    position: absolute;
+    left:1rem;
+    top:-5.3rem;
+}
+.code{
+    width: 80px;
+    height: 80px;
+}
+
 @keyframes myAnim {
 	0% {
 		transform: scale3d(1, 1, 1);
@@ -169,13 +179,18 @@ p{
     letter-spacing: 2px;
 }
 
-@media (max-width:980px){
-
+@media (max-width:595px){
+    .qr-code{
+        position: absolute;
+        left:auto;
+        top:40rem;
+    }
     .code{
-        margin-top: -1rem;
-        width: 70px;
+        width: 80px;
+        height: 80px;
     }
 }
+
 @media (max-width:913px){
     body {
         background-size: auto;
@@ -185,8 +200,8 @@ p{
     h1{
         font-size: 28px;
     }
- 
 }
+
 @media (max-width:486px){
     span{
         position: absolute;
@@ -199,6 +214,7 @@ p{
         color:rgb(252 181 0);
     }
 }
+
 @media (max-width:420px){
     body {
         background-size: auto;
@@ -225,6 +241,4 @@ p{
         top:-4.8rem;
         margin: 0 auto;
     }
-
-
 }
