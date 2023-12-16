@@ -139,7 +139,6 @@ audio::-webkit-media-controls-enclosure {
     margin: 40px;
     width: 400px;
     margin-top: 6rem;
-    border: 2px solid black;
     border-radius: 20px;
     padding: 0.5rem;
     box-shadow: 3px 10px 15px -1px #959797 ;
@@ -191,7 +190,7 @@ p{
     }
 }
 
-@media (max-height:800px){
+@media (max-height:900px){
     .footer{
         position: relative;
     }
