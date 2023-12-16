@@ -12,6 +12,7 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     overflow-x: hidden;
+    height: 100vh;
 }
 .header{
     height: 100px;
